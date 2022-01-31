@@ -44,7 +44,7 @@ def getContract(_contractName):
         contract = contractType[-1]
         # MockV3Aggregator[-1]
     else:
-        contractAddress = config['wallets'][network.show_active()][_contractName]
+        contractAddress = config['networks'][network.show_active()][_contractName]
         # Address
         # ABI
         contract = Contract.from_abi(

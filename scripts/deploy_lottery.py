@@ -47,6 +47,7 @@ def end_lottery():
     endingTransaction.wait(1)
     time.sleep(60)
     print(f'{lottery.recentWinner()} is the new winner!!' )
+    
 def main():
     deploy_lottery()
     start_lottery()
